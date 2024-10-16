@@ -2,7 +2,7 @@ const axios = require("axios");
 
 async function OfferSection() {
   try {
-    const request = await axios.get("http://192.168.1.21:4000/lp-data");
+    const request = await axios.get("http://localhost:4000/lp-data");
     const data = request.data;
 
     return (

@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" flex h-20 bg-gradient-to-r from-blue-600 to-purple-700 justify-center items-center font-normal text-2xl text-gray-400">
-        © Livest, 2024 All Rights Reserved
+        © Livecst, 2024 All Rights Reserved
       </div>
     </footer>
   );
