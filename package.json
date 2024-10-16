@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"node Backend/server.js\"",
+    "dev": "concurrently \"next dev\" \"node Backend/server.js\" \"npm run lint --cache\"",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "lint:watch": "eslint . --ext .js,.jsx,.ts,.tsx --watch"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
