@@ -8,7 +8,7 @@ app.get("/lp-data", (req, res) => {
         offers: [
             {
                 name: "Pro",
-                price: "$29.99 / Month",
+                price: "$30 / Month",
                 feature: [
                     {name: "Website & Mobile Optimized", unlock: true},
                     {name: "Life-time Free Usage", unlock: true},
@@ -48,6 +48,6 @@ app.get("/lp-data", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(4000, () => {
+  console.log("Server is running on port 4000");
 });
