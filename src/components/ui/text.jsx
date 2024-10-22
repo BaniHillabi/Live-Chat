@@ -22,6 +22,7 @@ const titleVariants = cva(
         default: "",
         black: "font-extrabold",
         bold: "font-bold",
+        semibold: "font-semibold",
         thin: "font-thin",
       },
       color: {
