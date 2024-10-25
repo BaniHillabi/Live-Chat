@@ -7,16 +7,29 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Title } from "@/components/ui/text";
 import InputForm from "../components/InputForm";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const route = useRouter()
+
+  const handlebutton = () => {
+    route.push("/register")
+  }
+
+  const handleimage = () => {
+    route.push("/");
+  };
 
   return (
     <form>
       <div className="flex flex-row justify-between mt-9 mx-20">
-        <Image src={Logo} alt="Logo" />
-        <Button variant="outline" size="lg">
+        <Image src={Logo} alt="Logo" onClick={(e) => {
+            e.preventDefault();
+            handleimage();
+          }}/>
+        <Button variant="outline" size="lg" onClick={(e) => { e.preventDefault(); handlebutton(); }}>
           Sign Up
         </Button>
       </div>
